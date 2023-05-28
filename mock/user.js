@@ -14,6 +14,8 @@ module.exports = [
                     username:Random.title(),
                     nickname:Random.cname()
                 }
+                // errno:100,
+                // message:'hu'
             }
         }
     },

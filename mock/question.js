@@ -11,7 +11,30 @@ module.exports = [
                 errno: 0,
                 data:{
                     id:Random.id(),
-                    title:Random.ctitle()
+                    title:Random.ctitle(),
+                    componentList:[
+                        // Title
+                        {
+                            fe_id: Random.id(),
+                            type:'questionTitle', // 组件类型不能重复,前后端统一好
+                            title:'标题',
+                            props:{text:'个人信息调研', level:1, isCenter: false}
+                        },
+                        // Input
+                        {
+                            fe_id: Random.id(),
+                            type: 'questionInput',
+                            title:'输入框',
+                            props:{title:'你的姓名', placeholder:'请输入姓名...'}
+                        },
+                        // Input
+                        {
+                            fe_id: Random.id(),
+                            type: 'questionInput',
+                            title:'输入框2',
+                            props:{title:'你的电话', placeholder:'请输入电话...'}
+                        }
+                    ]
                 }
                 // errno:122,
                 // msg:'错误'
